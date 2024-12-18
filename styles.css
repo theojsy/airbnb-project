@@ -209,6 +209,8 @@ body{
    
 }
 
+
+
 .sub-text{
     font-size:12px;
 }
@@ -307,7 +309,8 @@ body{
     width:100%;
     height:auto;
     min-height: 300px;
-    min-width: 250px;
+    /* min-width: 250px; */
+    aspect-ratio: 16 / 9;
     border-radius: 12px;
 
 }
@@ -363,9 +366,25 @@ body{
     display: flex;
     justify-content: center;
     gap: 25px;
-    border: solid 2px red;
+    /* border: solid 2px red; */
     
 }
+
+@media (min-width:850px) {
+    .photobyfour{
+        flex-wrap: wrap;
+        
+    }
+}
+
+@media (max-width:850px) {
+    .photobyfour{
+        flex-direction: column;
+       align-items:  center;
+    }
+}
+
+
 
 .ville{
     font-weight: 600;
@@ -405,4 +424,11 @@ body{
     
     margin-top: 30px;
     /* border:green 2px solid */
+}
+
+.section-4{
+    border: solid green 4px;
+    display: flex;
+    flex-direction: column;
+    
 }
